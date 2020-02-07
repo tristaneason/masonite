@@ -1,0 +1,18 @@
+.product {
+    border: 1px solid $lightGrey;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, .25);
+    .icon {
+        padding: 2rem 0;
+        @media (min-width: $lg) {
+            padding: 3rem 0;
+        }
+        img {
+            height: 5rem;
+            width: auto;
+        }
+    }
+    .title {
+        background: $white;
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,33 @@
+#videos {
+    span {
+        display: block;
+    }
+    .video {
+        &.active {
+            order: -1;
+            @media (min-width: $lg) {
+                margin-bottom: -20rem;
+            }
+        }
+        &:not(.active) {
+            position: relative;
+            z-index: 3;
+            @media (min-width: $lg) {
+                align-self: flex-end;
+            }
+        }
+        span {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.hidden {
+    iframe {
+        display: none;
+    }
+}
+
+.parent {
+
+}
